@@ -1,0 +1,1 @@
+badmin.Util = badmin.Util or {}

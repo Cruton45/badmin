@@ -1,13 +1,13 @@
-if bAdmin and bAdmin.Loaded then
+if badmin and badmin.Loaded then
     return
 end
 
-bAdmin = bAdmin or {}
-bAdmin.Version = "2.0.0-dev"
+badmin = badmin or {}
+badmin.Version = "2.0.0-dev"
 
 -- Prevent the legacy bloodyAdmin.lua loader from running in mixed checkouts.
 -- Remove this compatibility flag once the legacy loader has been deleted.
-bAdmin_IsLoaded = true
+badmin_IsLoaded = true
 
 local ROOT = "badmin/"
 local CAMI_PATH = ROOT .. "lib/sh_cami.lua"
@@ -87,5 +87,5 @@ else
     loadDirectory("client", REALM_CLIENT)
 end
 
-bAdmin.Loaded = true
-log("Version " .. bAdmin.Version .. " loaded successfully")
+badmin.Loaded = true
+log("Version " .. badmin.Version .. " loaded successfully")
